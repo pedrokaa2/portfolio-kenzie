@@ -14,13 +14,14 @@ export const BoxDivMain = styled.main `
   div {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
 
   h1 {
     font-size: 80px;
     display: flex;
     flex-direction: column;
-    margin: 5% 0px 3%;
+    margin: 5% 0px 5%;
     text-align: center;
   }
 
@@ -42,6 +43,10 @@ export const BoxDivMain = styled.main `
     h1 {
       text-align: start;
       margin-left: 23px;
+    }
+
+    span:hover {
+      color: var(--lightblue);
     }
 
     figure {
@@ -68,12 +73,6 @@ export const BoxDivHeader = styled.header `
   @media (min-width: 768px) {
     img {
       width: 200px;
-    }
-  }
-
-  @media (min-width: 1024px){
-    img:hover {
-      width: 180px;
     }
   }
 `;
@@ -120,7 +119,7 @@ export const BoxFooter = styled.footer `
   }
 
   @media (min-width: 500px) {
-    margin-top: 10%;
+    margin-top: 5%;
 
     button {
       width: 450px;
