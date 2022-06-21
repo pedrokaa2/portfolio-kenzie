@@ -23,10 +23,20 @@ export default createGlobalStyle `
   h1, button, span {
     font-family: 'Montserrat', sans-serif;
     font-size: 1rem;
+    font-weight: 600;
+  }
+
+  h1 {
+    color: var(--darkblue);
   }
 
   button {
     cursor: pointer;
+    background: var(--lightblue);
+    color: var(--almostWhite);
+    border: 1px dotted var(--darkblue);
+    border-radius: 20px;
+    padding: 20px;
   }
 
   p {
@@ -40,6 +50,7 @@ export default createGlobalStyle `
   }
 
   a {
+    font-family: 'Montserrat', sans-serif;
     text-decoration: none;
   }
 `
