@@ -22,7 +22,6 @@ export default createGlobalStyle `
 
   h1, button, span {
     font-family: 'Montserrat', sans-serif;
-    font-size: 1rem;
     font-weight: 600;
   }
 
@@ -35,7 +34,7 @@ export default createGlobalStyle `
     background: var(--lightblue);
     color: var(--almostWhite);
     border: 1px dotted var(--darkblue);
-    border-radius: 20px;
+    border-radius: 20px; 
     padding: 20px;
   }
 

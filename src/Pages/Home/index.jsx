@@ -16,14 +16,22 @@ const Home = () => {
         </S.DivLink>
       </S.BoxDivHeader>
       <S.BoxDivMain>
-        <h1>dev front end</h1>
-        <figure>
-          <img src={LogosFront} alt="logos front"></img>
-        </figure>
-        <a download="CurriculoPedro" href="https://cdn.discordapp.com/attachments/962409605818884146/988856988173750372/CurriculoPedro2Jun22.pdf">
-          <button>download cv</button>
-        </a>
+        <div>
+          <h1>
+            <span>dev</span>
+            <span>front</span>
+            <span>end</span>
+          </h1>
+          <figure>
+            <img src={LogosFront} alt="logos front"></img>
+          </figure>
+        </div>
       </S.BoxDivMain>
+        <S.BoxFooter>
+          <a download="CurriculoPedro" href="https://cdn.discordapp.com/attachments/962409605818884146/988856988173750372/CurriculoPedro2Jun22.pdf">
+            <button>download cv</button>
+          </a>
+        </S.BoxFooter>
     </S.BoxDiv>
   )
 }
