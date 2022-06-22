@@ -1,27 +1,29 @@
-import { Link } from "react-router-dom"
-import PedroLogo from '../../Assets/pedrodev 1.svg'
-import Malinha from "../../Components/Malinha"
+import { Link } from "react-router-dom";
+import PedroLogo from "../../Assets/pedrodev 1.svg";
+import Malinha from "../../Components/Malinha";
+import * as S from "./style";
 
 const MyProjects = () => {
   return (
-    <div>
+    <S.BoxDiv>
       <header>
         <Link to="/">
-          <img src={PedroLogo} alt="pedrologo"/>
+          <img src={PedroLogo} alt="pedrologo" />
         </Link>
       </header>
       <main>
+        <S.DivSpan>
+          <S.DivVaziaCor>
+            <div></div>
+          </S.DivVaziaCor>
+          <span>minhas bagagens</span>
+        </S.DivSpan>
         <div>
-          <div></div>
-          <span>meus projetos</span>
-        </div>
-        <div>
-          <Malinha/>
-          <Malinha/>
+          <Malinha />
         </div>
       </main>
-    </div>
-  )
-}
+    </S.BoxDiv>
+  );
+};
 
-export default MyProjects
+export default MyProjects;

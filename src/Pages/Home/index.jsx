@@ -12,7 +12,7 @@ const Home = () => {
         </figure>
         <S.DivLink>
           <Link to="/sobre">sobre</Link>
-          <Link to="/projetos">meus projetos</Link>
+          <Link to="/projetos">minhas bagagens</Link>
         </S.DivLink>
       </S.BoxDivHeader>
       <S.BoxDivMain>

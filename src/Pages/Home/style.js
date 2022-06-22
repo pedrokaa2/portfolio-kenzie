@@ -83,7 +83,7 @@ export const DivLink = styled.div `
   a {
     display: flex;
     justify-content: space-between;
-    font-size: 12px;
+    font-size: 11px;
     margin-right: 14px;
     color: var(--lightblue);
   }

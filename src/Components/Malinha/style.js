@@ -1,15 +1,26 @@
 import styled from "styled-components";
 
+export const DivBoxFather = styled.div `
+  display: flex;
+`
+
 export const Wrapper = styled.div`
+  margin: 0 auto;
   width: 90%;
   min-width: 256px;
   max-width: 462px;
   max-height: 462px;
 `;
 
+export const DivBox = styled.div `
+  display: flex;
+  flex-direction: column;
+`
+
 export const Alca = styled.div`
   display: flex;
   width: 50%;
+  margin-top: 100px;
   position: relative;
   left: 50%;
   transform: translateX(-50%);
@@ -20,7 +31,7 @@ export const Alca = styled.div`
     left: 20px;
     width: 69%;
     height: 22px;
-    background-color: #26293f;
+    background-color: var(--darkblue);
     border-radius: 10px;
     border-top-right-radius: 9px;
     border-top-left-radius: 9px;
@@ -116,9 +127,30 @@ export const Alca = styled.div`
 export const Corpo = styled.div`
   width: 100%;
   height: 364px;
+  margin-bottom: 100px;
   border-radius: 80px;
   background-color: var(--lightblue);
   position: relative;
+
+  span, h3 {
+    color: var(--almostWhite);
+  }
+
+  span {
+    font-size: 36px;
+  }
+
+  h3 {
+    font-size: 17px;
+    width: 250px;
+    margin: 20px 0;
+    font-weight: 300;
+    letter-spacing: 1.2px;
+  }
+
+  .tecnologias {
+    font-size: 12px;
+  }
 
   .box-rodinhas {
     width: 100%;
@@ -145,8 +177,13 @@ export const Corpo = styled.div`
       transform: translateX(150%);
       width: 45px;
       height: 45px;
-      background-color: #26293f;
+      background-color: var(--darkblue);
       border-radius: 100%;
+
+      img {
+        margin-top: 15px;
+        width: 42px;
+      }
     }
 
     @media (min-width: 417px) {
