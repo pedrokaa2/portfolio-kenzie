@@ -155,6 +155,7 @@ export const Corpo = styled.div`
   .box-rodinhas {
     width: 100%;
     position: absolute;
+    display: flex;
     bottom: 0;
     left: 50%;
     transform: translateX(-50%);
@@ -163,26 +164,39 @@ export const Corpo = styled.div`
       position: absolute;
       bottom: -40px;
       left: 50%;
+      margin-left: 40px;
       transform: translateX(-150%);
       width: 45px;
       height: 45px;
-      background-color: #26293f;
+      background-color: var(--darkblue);
       border-radius: 100%;
+      animation: spin infinite 2s;
     }
 
     .rodinha-direita {
       position: absolute;
       bottom: -40px;
       right: 50%;
+      margin-right: 40px;
       transform: translateX(150%);
       width: 45px;
       height: 45px;
       background-color: var(--darkblue);
       border-radius: 100%;
+      animation: spin infinite 2s;
 
       img {
         margin-top: 15px;
         width: 42px;
+      }
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
       }
     }
 

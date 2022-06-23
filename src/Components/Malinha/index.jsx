@@ -17,7 +17,7 @@ const Malinha = () => {
           <S.Corpo>
             <div className="text-content">
               <span>Kenzie Hub</span>
-              <h3 className="kenziehubh3">site para cadastro de alunos para botarem de quais módulos eles estão no curso, e também cadastrar suas tecnologias em cima do conhecimento das mesmas.</h3>
+              <h3 className="kenziehubh3">site para alunos cadastrarem de quais módulos eles estão no curso, e também suas tecnologias em cima do conhecimento das mesmas.</h3>
               <span className="tecnologias">javascript | react | css | html</span>
             </div>
             <div className="box-rodinhas">

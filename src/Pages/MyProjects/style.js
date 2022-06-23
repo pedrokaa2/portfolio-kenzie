@@ -5,6 +5,17 @@ export const BoxDiv = styled.div `
   display: flex;
   flex-direction: column;
 
+  animation: start 1s;
+
+    @keyframes start {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
   header {
     display: flex;
     flex-direction: column;

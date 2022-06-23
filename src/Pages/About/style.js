@@ -3,6 +3,17 @@ import styled from "styled-components";
 export const BoxDiv = styled.div ` 
   width: 100vw;
 
+  animation: start 1s;
+
+    @keyframes start {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
   header {
     display: flex;
     flex-direction: column;
@@ -63,6 +74,7 @@ export const BoxDivCss = styled.div `
 
     img {
       width: 300px;
+      filter: drop-shadow(0px 4px 7px var(--darkblue));
     }
 
   }

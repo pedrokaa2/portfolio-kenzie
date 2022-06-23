@@ -18,9 +18,9 @@ const Home = () => {
       <S.BoxDivMain>
         <div>
           <h1>
-            <span>dev</span>
-            <span>front</span>
-            <span>end</span>
+            <span className="dev"></span>
+            <span className="front"></span>
+            <span className="end"></span>
           </h1>
           <figure>
             <img src={LogosFront} alt="logos front"></img>
